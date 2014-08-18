@@ -1,4 +1,6 @@
-*** FIX EVERYTHING CHANGELOG ***
+Created this to simplify all the repetitive stuff I do at work. 
+
+Here's a changelog:
 
 
 --- v0.6 ---
@@ -14,6 +16,7 @@
 --- v0.4 ---
 
 + Added IObit & Revo uninstallers
++ Reduced filesize significantly (65MB to 25MB!)
 
 
 --- v0.3 ---
