@@ -77,6 +77,7 @@
             this.btnFirefox = new System.Windows.Forms.Button();
             this.btnChrome = new System.Windows.Forms.Button();
             this.btnAvast = new System.Windows.Forms.Button();
+            this.btnUvk = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage5.SuspendLayout();
@@ -111,7 +112,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(294, 45);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Fix Everything v0.6";
+            this.label1.Text = "Fix Everything v0.7";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // button2
@@ -288,6 +289,7 @@
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(162)))), ((int)(((byte)(211)))));
+            this.tabPage5.Controls.Add(this.btnUvk);
             this.tabPage5.Controls.Add(this.btnRevo);
             this.tabPage5.Controls.Add(this.btnIobit);
             this.tabPage5.Controls.Add(this.btnMalwarebytesOld);
@@ -311,9 +313,9 @@
             this.btnRevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRevo.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRevo.ForeColor = System.Drawing.Color.White;
-            this.btnRevo.Location = new System.Drawing.Point(515, 411);
+            this.btnRevo.Location = new System.Drawing.Point(515, 337);
             this.btnRevo.Name = "btnRevo";
-            this.btnRevo.Size = new System.Drawing.Size(391, 103);
+            this.btnRevo.Size = new System.Drawing.Size(391, 66);
             this.btnRevo.TabIndex = 29;
             this.btnRevo.Text = "Revo Uninstaller";
             this.btnRevo.UseVisualStyleBackColor = true;
@@ -327,9 +329,9 @@
             this.btnIobit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIobit.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIobit.ForeColor = System.Drawing.Color.White;
-            this.btnIobit.Location = new System.Drawing.Point(45, 411);
+            this.btnIobit.Location = new System.Drawing.Point(45, 337);
             this.btnIobit.Name = "btnIobit";
-            this.btnIobit.Size = new System.Drawing.Size(391, 103);
+            this.btnIobit.Size = new System.Drawing.Size(391, 66);
             this.btnIobit.TabIndex = 28;
             this.btnIobit.Text = "IObit Uninstaller";
             this.btnIobit.UseVisualStyleBackColor = true;
@@ -343,9 +345,9 @@
             this.btnMalwarebytesOld.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMalwarebytesOld.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMalwarebytesOld.ForeColor = System.Drawing.Color.White;
-            this.btnMalwarebytesOld.Location = new System.Drawing.Point(515, 163);
+            this.btnMalwarebytesOld.Location = new System.Drawing.Point(515, 141);
             this.btnMalwarebytesOld.Name = "btnMalwarebytesOld";
-            this.btnMalwarebytesOld.Size = new System.Drawing.Size(391, 103);
+            this.btnMalwarebytesOld.Size = new System.Drawing.Size(391, 66);
             this.btnMalwarebytesOld.TabIndex = 27;
             this.btnMalwarebytesOld.Text = "Malwarebytes 1.75";
             this.btnMalwarebytesOld.UseVisualStyleBackColor = true;
@@ -370,9 +372,9 @@
             this.btnAdwcleaner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdwcleaner.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdwcleaner.ForeColor = System.Drawing.Color.White;
-            this.btnAdwcleaner.Location = new System.Drawing.Point(515, 286);
+            this.btnAdwcleaner.Location = new System.Drawing.Point(515, 237);
             this.btnAdwcleaner.Name = "btnAdwcleaner";
-            this.btnAdwcleaner.Size = new System.Drawing.Size(391, 102);
+            this.btnAdwcleaner.Size = new System.Drawing.Size(391, 66);
             this.btnAdwcleaner.TabIndex = 25;
             this.btnAdwcleaner.Text = "AdwCleaner";
             this.btnAdwcleaner.UseVisualStyleBackColor = true;
@@ -386,9 +388,9 @@
             this.btnMalwarebytes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMalwarebytes.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMalwarebytes.ForeColor = System.Drawing.Color.White;
-            this.btnMalwarebytes.Location = new System.Drawing.Point(45, 163);
+            this.btnMalwarebytes.Location = new System.Drawing.Point(45, 141);
             this.btnMalwarebytes.Name = "btnMalwarebytes";
-            this.btnMalwarebytes.Size = new System.Drawing.Size(391, 103);
+            this.btnMalwarebytes.Size = new System.Drawing.Size(391, 66);
             this.btnMalwarebytes.TabIndex = 24;
             this.btnMalwarebytes.Text = "Malwarebytes 2.0+";
             this.btnMalwarebytes.UseVisualStyleBackColor = true;
@@ -404,7 +406,7 @@
             this.btnHitman32.ForeColor = System.Drawing.Color.White;
             this.btnHitman32.Location = new System.Drawing.Point(515, 41);
             this.btnHitman32.Name = "btnHitman32";
-            this.btnHitman32.Size = new System.Drawing.Size(391, 103);
+            this.btnHitman32.Size = new System.Drawing.Size(391, 66);
             this.btnHitman32.TabIndex = 23;
             this.btnHitman32.Text = "HitmanPro 32-bit";
             this.btnHitman32.UseVisualStyleBackColor = true;
@@ -420,7 +422,7 @@
             this.btnHitman64.ForeColor = System.Drawing.Color.White;
             this.btnHitman64.Location = new System.Drawing.Point(45, 41);
             this.btnHitman64.Name = "btnHitman64";
-            this.btnHitman64.Size = new System.Drawing.Size(391, 103);
+            this.btnHitman64.Size = new System.Drawing.Size(391, 66);
             this.btnHitman64.TabIndex = 22;
             this.btnHitman64.Text = "HitmanPro 64-bit";
             this.btnHitman64.UseVisualStyleBackColor = true;
@@ -434,9 +436,9 @@
             this.btnSuper.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSuper.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSuper.ForeColor = System.Drawing.Color.White;
-            this.btnSuper.Location = new System.Drawing.Point(45, 286);
+            this.btnSuper.Location = new System.Drawing.Point(45, 237);
             this.btnSuper.Name = "btnSuper";
-            this.btnSuper.Size = new System.Drawing.Size(391, 103);
+            this.btnSuper.Size = new System.Drawing.Size(391, 66);
             this.btnSuper.TabIndex = 20;
             this.btnSuper.Text = "Super Anti-Spyware";
             this.btnSuper.UseVisualStyleBackColor = true;
@@ -826,6 +828,22 @@
             this.btnAvast.UseVisualStyleBackColor = true;
             this.btnAvast.Click += new System.EventHandler(this.btnAvast_Click);
             // 
+            // btnUvk
+            // 
+            this.btnUvk.BackColor = System.Drawing.Color.Transparent;
+            this.btnUvk.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnUvk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnUvk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUvk.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUvk.ForeColor = System.Drawing.Color.White;
+            this.btnUvk.Location = new System.Drawing.Point(45, 439);
+            this.btnUvk.Name = "btnUvk";
+            this.btnUvk.Size = new System.Drawing.Size(391, 66);
+            this.btnUvk.TabIndex = 30;
+            this.btnUvk.Text = "Ultra Virus Killer (UVK)";
+            this.btnUvk.UseVisualStyleBackColor = true;
+            this.btnUvk.Click += new System.EventHandler(this.btnUvk_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -836,7 +854,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Totally Legit Fix Everything Program v0.6";
+            this.Text = "Fix Everything Program v0.7";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -903,6 +921,7 @@
         private System.Windows.Forms.Button btnRevo;
         private System.Windows.Forms.Button btnIobit;
         private System.Windows.Forms.Button btnRemoveTrend;
+        private System.Windows.Forms.Button btnUvk;
     }
 }
 

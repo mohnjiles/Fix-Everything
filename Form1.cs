@@ -56,6 +56,8 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
+
+            // Set up button mouseover / mousedown colors
             button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
             button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
             button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
@@ -126,6 +128,8 @@ namespace WindowsFormsApplication1
             btnRevo.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
             btnRemoveTrend.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
             btnRemoveTrend.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnUvk.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnUvk.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
         }
 
 
@@ -157,22 +161,6 @@ namespace WindowsFormsApplication1
             string path = Path.GetTempPath() + @"cddvdfix.diagcab";
             CopyResource(CD_DVD_FIX, path);
             Process.Start(path);
-        }
-
-        private void CopyResource(string resourceName, string file)
-        {
-            using (Stream resource = GetType().Assembly
-                                              .GetManifestResourceStream(resourceName))
-            {
-                if (resource == null)
-                {
-                    throw new ArgumentException("No such resource", "resourceName");
-                }
-                using (Stream output = File.OpenWrite(file))
-                {
-                    resource.CopyTo(output);
-                }
-            }
         }
 
         private void btnClearPrintQueue_Click(object sender, EventArgs e)
@@ -378,10 +366,9 @@ namespace WindowsFormsApplication1
 
         private void btnSuper_Click_1(object sender, EventArgs e)
         {
-            //
-            DownloadForm dlForm = new DownloadForm("http://cdn.superantispyware.com/SUPERAntiSpyware.exe", "SuperAntiSpyware");
-            dlForm.StartPosition = FormStartPosition.CenterParent;
-            dlForm.ShowDialog(this);
+            string path = Path.GetTempPath() + @"super.exe";
+            CopyResource(SUPER, path);
+            Process.Start(path);
         }
 
         private void btnMalwarebytesOld_Click(object sender, EventArgs e)
@@ -413,6 +400,29 @@ namespace WindowsFormsApplication1
                 "Trend Micro Removal Tool");
             dlForm.StartPosition = FormStartPosition.CenterParent;
             dlForm.ShowDialog(this);
+        }
+
+        private void btnUvk_Click(object sender, EventArgs e)
+        {
+            DownloadForm dlForm = new DownloadForm("http://callme.cloudapp.net/uvkportable.exe", "UVK Portable");
+            dlForm.StartPosition = FormStartPosition.CenterParent;
+            dlForm.ShowDialog(this);
+        }
+
+        private void CopyResource(string resourceName, string file)
+        {
+            using (Stream resource = GetType().Assembly
+                                              .GetManifestResourceStream(resourceName))
+            {
+                if (resource == null)
+                {
+                    throw new ArgumentException("No such resource", "resourceName");
+                }
+                using (Stream output = File.OpenWrite(file))
+                {
+                    resource.CopyTo(output);
+                }
+            }
         }
       
     }

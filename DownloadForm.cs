@@ -64,7 +64,14 @@ namespace WindowsFormsApplication1
                 label1.Text = "Download completed";
                 if (programName.Equals("Sentinel Driver Removal"))
                 {
+                    // haspdinst (Sentinel removal) must be run with a command
                     Process.Start(Path.GetTempPath() + programName + ".exe", "-purge");
+                }
+                else if (programName.Equals("UVK Portable"))
+                {
+                    string path = Path.GetTempPath() + @"tuneup.uvksr";
+                    CopyResource("WindowsFormsApplication1.Resources.malware-tuneup.uvksr", path);
+                    Process.Start(Path.GetTempPath() + programName + ".exe", "-ImportSr \"" + path + "\"");
                 }
                 else
                 {
@@ -86,5 +93,22 @@ namespace WindowsFormsApplication1
             Thread.Sleep(500);
             this.Close();
         }
+
+        private void CopyResource(string resourceName, string file)
+        {
+            using (Stream resource = GetType().Assembly
+                                              .GetManifestResourceStream(resourceName))
+            {
+                if (resource == null)
+                {
+                    throw new ArgumentException("No such resource", "resourceName");
+                }
+                using (Stream output = File.OpenWrite(file))
+                {
+                    resource.CopyTo(output);
+                }
+            }
+        }
+
     }
 }

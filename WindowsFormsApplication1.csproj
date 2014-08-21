@@ -176,6 +176,7 @@
     <EmbeddedResource Include="Resources\apps.diagcab" />
     <None Include="Reset-Ie-Default.ps1" />
     <EmbeddedResource Include="Resources\Reset-Ie-Default.ps1" />
+    <EmbeddedResource Include="Resources\malware-tuneup.uvksr" />
     <None Include="WindowsFormsApplication1_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

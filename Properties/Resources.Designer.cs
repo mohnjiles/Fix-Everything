@@ -147,6 +147,16 @@ namespace WindowsFormsApplication1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] malware_tuneup {
+            get {
+                object obj = ResourceManager.GetObject("malware_tuneup", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] Ninite_Avast_Installer {
             get {
                 object obj = ResourceManager.GetObject("Ninite_Avast_Installer", resourceCulture);
