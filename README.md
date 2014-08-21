@@ -3,6 +3,11 @@ Created this to simplify all the repetitive stuff I do at work.
 Here's a changelog:
 
 
+--- v0.8 ---
+
++ More automation for HitmanPro & Malwarebytes (1.75 only)
+
+
 --- v0.7 ---
 
 + Added UVK

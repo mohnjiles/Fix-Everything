@@ -43,6 +43,7 @@
             this.btnClearPrintQueue = new System.Windows.Forms.Button();
             this.btnDvd = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.btnUvk = new System.Windows.Forms.Button();
             this.btnRevo = new System.Windows.Forms.Button();
             this.btnIobit = new System.Windows.Forms.Button();
             this.btnMalwarebytesOld = new System.Windows.Forms.Button();
@@ -77,7 +78,6 @@
             this.btnFirefox = new System.Windows.Forms.Button();
             this.btnChrome = new System.Windows.Forms.Button();
             this.btnAvast = new System.Windows.Forms.Button();
-            this.btnUvk = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage5.SuspendLayout();
@@ -112,7 +112,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(294, 45);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Fix Everything v0.7";
+            this.label1.Text = "Fix Everything v0.8";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // button2
@@ -304,6 +304,22 @@
             this.tabPage5.Size = new System.Drawing.Size(958, 557);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Malware Removal";
+            // 
+            // btnUvk
+            // 
+            this.btnUvk.BackColor = System.Drawing.Color.Transparent;
+            this.btnUvk.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnUvk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnUvk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUvk.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUvk.ForeColor = System.Drawing.Color.White;
+            this.btnUvk.Location = new System.Drawing.Point(45, 439);
+            this.btnUvk.Name = "btnUvk";
+            this.btnUvk.Size = new System.Drawing.Size(391, 66);
+            this.btnUvk.TabIndex = 30;
+            this.btnUvk.Text = "Ultra Virus Killer (UVK)";
+            this.btnUvk.UseVisualStyleBackColor = true;
+            this.btnUvk.Click += new System.EventHandler(this.btnUvk_Click);
             // 
             // btnRevo
             // 
@@ -828,22 +844,6 @@
             this.btnAvast.UseVisualStyleBackColor = true;
             this.btnAvast.Click += new System.EventHandler(this.btnAvast_Click);
             // 
-            // btnUvk
-            // 
-            this.btnUvk.BackColor = System.Drawing.Color.Transparent;
-            this.btnUvk.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnUvk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnUvk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUvk.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUvk.ForeColor = System.Drawing.Color.White;
-            this.btnUvk.Location = new System.Drawing.Point(45, 439);
-            this.btnUvk.Name = "btnUvk";
-            this.btnUvk.Size = new System.Drawing.Size(391, 66);
-            this.btnUvk.TabIndex = 30;
-            this.btnUvk.Text = "Ultra Virus Killer (UVK)";
-            this.btnUvk.UseVisualStyleBackColor = true;
-            this.btnUvk.Click += new System.EventHandler(this.btnUvk_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -854,7 +854,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Fix Everything Program v0.7";
+            this.Text = "Fix Everything Program v0.8";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
