@@ -3,6 +3,12 @@ Created this to simplify all the repetitive stuff I do at work.
 Here's a changelog:
 
 
+--- v0.7 ---
+
++ Added UVK
++ Changed Super installer back to Ninite
+
+
 --- v0.6 ---
 
 + Added Trend Micro Removal Tool
