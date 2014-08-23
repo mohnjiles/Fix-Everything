@@ -2,6 +2,10 @@ Created this to simplify all the repetitive stuff I do at work.
 
 Here's a changelog:
 
+--- v0.9 ---
+
++ Added self-updating
+
 
 --- v0.8 ---
 

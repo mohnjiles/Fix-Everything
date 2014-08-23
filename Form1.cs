@@ -49,6 +49,7 @@ namespace WindowsFormsApplication1
         private const string RESET_IE_BAT = RESOURCE_DIR + "fix_ie.bat";
         private const string RESET_FF = RESOURCE_DIR + "fix_firefox.bat";
         private const string RESET_CHROME = RESOURCE_DIR + "fix_chrome.bat";
+        private const int CURRENT_VERSION = 9;
 
        
 
@@ -421,6 +422,25 @@ namespace WindowsFormsApplication1
                 using (Stream output = File.OpenWrite(file))
                 {
                     resource.CopyTo(output);
+                }
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            WebClient client = new WebClient();
+            Stream stream = client.OpenRead("http://callme.cloudapp.net/version.txt");
+            StreamReader reader = new StreamReader(stream);
+            string version = reader.ReadToEnd();
+            int serverVersion = Convert.ToInt16(version);
+            if (CURRENT_VERSION < serverVersion)
+            {
+                DialogResult result = MessageBox.Show("New version of Fix Everything is available. Download now?", "New version available", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    DownloadForm dlForm = new DownloadForm("http://callme.cloudapp.net/updater.exe", "update");
+                    dlForm.StartPosition = FormStartPosition.CenterParent;
+                    dlForm.ShowDialog(this);
                 }
             }
         }

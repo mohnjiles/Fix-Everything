@@ -112,7 +112,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(294, 45);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Fix Everything v0.8";
+            this.label1.Text = "Fix Everything v0.9";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // button2
@@ -854,7 +854,8 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Fix Everything Program v0.8";
+            this.Text = "Fix Everything Program v0.9";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

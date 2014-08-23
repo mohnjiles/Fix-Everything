@@ -1,5 +1,9 @@
 ########## FIX EVERYTHING CHANGELOG ##########
 
+--- v0.9 ---
+
++ Added self-updating
+
 
 --- v0.8 ---
 

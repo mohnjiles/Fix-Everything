@@ -108,6 +108,11 @@ namespace WindowsFormsApplication1
                         Process.Start(Path.GetTempPath() + programName + ".exe", "/scan");
                         break;
 
+                    case "update":
+                        Process.Start(Path.GetTempPath() + programName + ".exe");
+                        Application.Exit();
+                        break;
+
                     default:
                         Process.Start(Path.GetTempPath() + programName + ".exe");
                         break;
