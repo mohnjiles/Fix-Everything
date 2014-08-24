@@ -1,5 +1,12 @@
 ########## FIX EVERYTHING CHANGELOG ##########
 
+
+--- v0.10 ---
+
++ Added Refresh & Reset options
++ Updated UVK
+
+
 --- v0.9 ---
 
 + Added self-updating

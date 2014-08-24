@@ -2,6 +2,13 @@ Created this to simplify all the repetitive stuff I do at work.
 
 Here's a changelog:
 
+
+--- v0.10 ---
+
++ Added Refresh & Reset options
++ Updated UVK
+
+
 --- v0.9 ---
 
 + Added self-updating

@@ -119,7 +119,7 @@ namespace WindowsFormsApplication1.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to firefox.exe -safe-mode.
+        ///   Looks up a localized string similar to &quot;C:\Program Files (x86)\Mozilla Firefox\firefox.exe&quot; -safe-mode.
         /// </summary>
         internal static string fix_firefox {
             get {
@@ -141,6 +141,16 @@ namespace WindowsFormsApplication1.Properties {
         internal static string fix_ie {
             get {
                 return ResourceManager.GetString("fix_ie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] key {
+            get {
+                object obj = ResourceManager.GetObject("key", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         

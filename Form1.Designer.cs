@@ -43,6 +43,7 @@
             this.btnClearPrintQueue = new System.Windows.Forms.Button();
             this.btnDvd = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.btnCcleaner = new System.Windows.Forms.Button();
             this.btnUvk = new System.Windows.Forms.Button();
             this.btnRevo = new System.Windows.Forms.Button();
             this.btnIobit = new System.Windows.Forms.Button();
@@ -55,7 +56,6 @@
             this.btnSuper = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnRemoveTrend = new System.Windows.Forms.Button();
-            this.btnCcleaner = new System.Windows.Forms.Button();
             this.btnRemoveNorton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnOffice2013 = new System.Windows.Forms.Button();
@@ -63,6 +63,7 @@
             this.btnAutoruns = new System.Windows.Forms.Button();
             this.btnRemoveMcAfee = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.btnRefreshReset = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.btnResetFirefox = new System.Windows.Forms.Button();
             this.btnResetChrome = new System.Windows.Forms.Button();
@@ -108,11 +109,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(345, 13);
+            this.label1.Location = new System.Drawing.Point(336, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(294, 45);
+            this.label1.Size = new System.Drawing.Size(313, 45);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Fix Everything v0.9";
+            this.label1.Text = "Fix Everything v0.10";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // button2
@@ -289,6 +290,7 @@
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(162)))), ((int)(((byte)(211)))));
+            this.tabPage5.Controls.Add(this.btnCcleaner);
             this.tabPage5.Controls.Add(this.btnUvk);
             this.tabPage5.Controls.Add(this.btnRevo);
             this.tabPage5.Controls.Add(this.btnIobit);
@@ -304,6 +306,22 @@
             this.tabPage5.Size = new System.Drawing.Size(958, 557);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Malware Removal";
+            // 
+            // btnCcleaner
+            // 
+            this.btnCcleaner.BackColor = System.Drawing.Color.Transparent;
+            this.btnCcleaner.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnCcleaner.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnCcleaner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCcleaner.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCcleaner.ForeColor = System.Drawing.Color.White;
+            this.btnCcleaner.Location = new System.Drawing.Point(515, 439);
+            this.btnCcleaner.Name = "btnCcleaner";
+            this.btnCcleaner.Size = new System.Drawing.Size(391, 66);
+            this.btnCcleaner.TabIndex = 31;
+            this.btnCcleaner.Text = "CCleaner";
+            this.btnCcleaner.UseVisualStyleBackColor = true;
+            this.btnCcleaner.Click += new System.EventHandler(this.btnCcleaner_Click_1);
             // 
             // btnUvk
             // 
@@ -464,7 +482,6 @@
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(162)))), ((int)(((byte)(211)))));
             this.tabPage2.Controls.Add(this.btnRemoveTrend);
-            this.tabPage2.Controls.Add(this.btnCcleaner);
             this.tabPage2.Controls.Add(this.btnRemoveNorton);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.btnOffice2013);
@@ -486,29 +503,13 @@
             this.btnRemoveTrend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemoveTrend.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveTrend.ForeColor = System.Drawing.Color.White;
-            this.btnRemoveTrend.Location = new System.Drawing.Point(48, 418);
+            this.btnRemoveTrend.Location = new System.Drawing.Point(49, 393);
             this.btnRemoveTrend.Name = "btnRemoveTrend";
             this.btnRemoveTrend.Size = new System.Drawing.Size(391, 93);
             this.btnRemoveTrend.TabIndex = 7;
             this.btnRemoveTrend.Text = "Remove Trend Micro";
             this.btnRemoveTrend.UseVisualStyleBackColor = true;
             this.btnRemoveTrend.Click += new System.EventHandler(this.btnRemoveTrend_Click);
-            // 
-            // btnCcleaner
-            // 
-            this.btnCcleaner.BackColor = System.Drawing.Color.Transparent;
-            this.btnCcleaner.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnCcleaner.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnCcleaner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCcleaner.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCcleaner.ForeColor = System.Drawing.Color.White;
-            this.btnCcleaner.Location = new System.Drawing.Point(514, 34);
-            this.btnCcleaner.Name = "btnCcleaner";
-            this.btnCcleaner.Size = new System.Drawing.Size(391, 93);
-            this.btnCcleaner.TabIndex = 6;
-            this.btnCcleaner.Text = "CCleaner";
-            this.btnCcleaner.UseVisualStyleBackColor = true;
-            this.btnCcleaner.Click += new System.EventHandler(this.btnCcleaner_Click);
             // 
             // btnRemoveNorton
             // 
@@ -518,7 +519,7 @@
             this.btnRemoveNorton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemoveNorton.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveNorton.ForeColor = System.Drawing.Color.White;
-            this.btnRemoveNorton.Location = new System.Drawing.Point(514, 289);
+            this.btnRemoveNorton.Location = new System.Drawing.Point(515, 226);
             this.btnRemoveNorton.Name = "btnRemoveNorton";
             this.btnRemoveNorton.Size = new System.Drawing.Size(391, 93);
             this.btnRemoveNorton.TabIndex = 5;
@@ -544,7 +545,7 @@
             this.btnOffice2013.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOffice2013.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOffice2013.ForeColor = System.Drawing.Color.White;
-            this.btnOffice2013.Location = new System.Drawing.Point(514, 159);
+            this.btnOffice2013.Location = new System.Drawing.Point(515, 57);
             this.btnOffice2013.Name = "btnOffice2013";
             this.btnOffice2013.Size = new System.Drawing.Size(391, 93);
             this.btnOffice2013.TabIndex = 4;
@@ -560,7 +561,7 @@
             this.btnOffice2010.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOffice2010.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOffice2010.ForeColor = System.Drawing.Color.White;
-            this.btnOffice2010.Location = new System.Drawing.Point(48, 159);
+            this.btnOffice2010.Location = new System.Drawing.Point(49, 57);
             this.btnOffice2010.Name = "btnOffice2010";
             this.btnOffice2010.Size = new System.Drawing.Size(391, 93);
             this.btnOffice2010.TabIndex = 3;
@@ -576,7 +577,7 @@
             this.btnAutoruns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAutoruns.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAutoruns.ForeColor = System.Drawing.Color.White;
-            this.btnAutoruns.Location = new System.Drawing.Point(48, 34);
+            this.btnAutoruns.Location = new System.Drawing.Point(515, 393);
             this.btnAutoruns.Name = "btnAutoruns";
             this.btnAutoruns.Size = new System.Drawing.Size(391, 93);
             this.btnAutoruns.TabIndex = 2;
@@ -592,7 +593,7 @@
             this.btnRemoveMcAfee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemoveMcAfee.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveMcAfee.ForeColor = System.Drawing.Color.White;
-            this.btnRemoveMcAfee.Location = new System.Drawing.Point(48, 289);
+            this.btnRemoveMcAfee.Location = new System.Drawing.Point(49, 226);
             this.btnRemoveMcAfee.Name = "btnRemoveMcAfee";
             this.btnRemoveMcAfee.Size = new System.Drawing.Size(391, 93);
             this.btnRemoveMcAfee.TabIndex = 1;
@@ -603,6 +604,7 @@
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(162)))), ((int)(((byte)(211)))));
+            this.tabPage4.Controls.Add(this.btnRefreshReset);
             this.tabPage4.Controls.Add(this.label7);
             this.tabPage4.Controls.Add(this.btnResetFirefox);
             this.tabPage4.Controls.Add(this.btnResetChrome);
@@ -612,7 +614,23 @@
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(958, 557);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Internet Browsers";
+            this.tabPage4.Text = "Other";
+            // 
+            // btnRefreshReset
+            // 
+            this.btnRefreshReset.BackColor = System.Drawing.Color.Transparent;
+            this.btnRefreshReset.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnRefreshReset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnRefreshReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefreshReset.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefreshReset.ForeColor = System.Drawing.Color.White;
+            this.btnRefreshReset.Location = new System.Drawing.Point(514, 244);
+            this.btnRefreshReset.Name = "btnRefreshReset";
+            this.btnRefreshReset.Size = new System.Drawing.Size(391, 103);
+            this.btnRefreshReset.TabIndex = 6;
+            this.btnRefreshReset.Text = "Refresh / Reset Computer";
+            this.btnRefreshReset.UseVisualStyleBackColor = false;
+            this.btnRefreshReset.Click += new System.EventHandler(this.btnRefreshReset_Click);
             // 
             // label7
             // 
@@ -632,7 +650,7 @@
             this.btnResetFirefox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResetFirefox.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResetFirefox.ForeColor = System.Drawing.Color.White;
-            this.btnResetFirefox.Location = new System.Drawing.Point(47, 240);
+            this.btnResetFirefox.Location = new System.Drawing.Point(47, 244);
             this.btnResetFirefox.Name = "btnResetFirefox";
             this.btnResetFirefox.Size = new System.Drawing.Size(391, 103);
             this.btnResetFirefox.TabIndex = 3;
@@ -854,7 +872,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Fix Everything Program v0.9";
+            this.Text = "Fix Everything Program v0.10";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -908,7 +926,6 @@
         private System.Windows.Forms.Button btnResetFirefox;
         private System.Windows.Forms.Button btnResetChrome;
         private System.Windows.Forms.Button btnResetIe;
-        private System.Windows.Forms.Button btnCcleaner;
         private System.Windows.Forms.Button btnScans;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Button btnAdwcleaner;
@@ -923,6 +940,8 @@
         private System.Windows.Forms.Button btnIobit;
         private System.Windows.Forms.Button btnRemoveTrend;
         private System.Windows.Forms.Button btnUvk;
+        private System.Windows.Forms.Button btnCcleaner;
+        private System.Windows.Forms.Button btnRefreshReset;
     }
 }
 

@@ -62,60 +62,65 @@ namespace WindowsFormsApplication1
             this.BeginInvoke((MethodInvoker)delegate
             {
                 label1.Text = "Download completed";
-
-                switch (programName)
+                try
                 {
-                    case "Malwarebytes":
-                        Process mbam;
-                        mbam = Process.Start(Path.GetTempPath() + programName + ".exe", "/silent");
-                        while (!mbam.HasExited)
-                        {
-                            Thread.Sleep(250);
-                        }
-                        Process.Start("C:\\Program Files (x86)\\Malwarebytes Anti-Malware\\mbam.exe");
-                        break;
+                    switch (programName)
+                    {
+                        case "Malwarebytes":
+                            Process mbam;
+                            mbam = Process.Start(Path.GetTempPath() + programName + ".exe", "/silent");
+                            while (!mbam.HasExited)
+                            {
+                                label1.Text = "Installing...";
+                            }
+                            Process.Start("C:\\Program Files (x86)\\Malwarebytes Anti-Malware\\mbam.exe");
+                            break;
 
-                    case "Malwarebytes 1.75":
-                        label1.Text = "Installing...";
-                        Process p;
-                        p = Process.Start(Path.GetTempPath() + programName + ".exe", "/silent");
-                        while (!p.HasExited)
-                        {
-                            label1.Text = "Updating...";
-                            Thread.Sleep(250);
-                        }
-                        p = Process.Start("C:\\Program Files (x86)\\Malwarebytes' Anti-Malware\\mbam.exe", "/update");
-                        while (!p.HasExited)
-                        {
+                        case "Malwarebytes 1.75":
+                            Process p;
+                            p = Process.Start(Path.GetTempPath() + programName + ".exe", "/silent");
+                            while (!p.HasExited)
+                            {
+                                label1.Text = "Installing...";
+                            }
+                            p = Process.Start("C:\\Program Files (x86)\\Malwarebytes' Anti-Malware\\mbam.exe", "/update");
+                            while (!p.HasExited)
+                            {
+                                label1.Text = "Updating...";
+                            }
                             label1.Text = "Starting quick scan...";
-                            Thread.Sleep(250);
-                        }
-                        p = Process.Start("C:\\Program Files (x86)\\Malwarebytes' Anti-Malware\\mbam.exe", "/quickscan");
-                        break;
+                            p = Process.Start("C:\\Program Files (x86)\\Malwarebytes' Anti-Malware\\mbam.exe", "/quickscan");
+                            break;
 
-                    case "Sentinel Driver Removal":
-                        // haspdinst (Sentinel removal) must be run with a command
-                        Process.Start(Path.GetTempPath() + programName + ".exe", "-purge");
-                        break;
+                        case "Sentinel Driver Removal":
+                            // haspdinst (Sentinel removal) must be run with a command
+                            Process.Start(Path.GetTempPath() + programName + ".exe", "-purge");
+                            break;
 
-                    case "UVK Portable":
-                        string path = Path.GetTempPath() + @"tuneup.uvksr";
-                        CopyResource("WindowsFormsApplication1.Resources.malware-tuneup.uvksr", path);
-                        Process.Start(Path.GetTempPath() + programName + ".exe", "-ImportSr \"" + path + "\"");
-                        break;
+                        case "UVK Portable":
+                            string path = Path.GetTempPath() + @"tuneup.uvksr";
+                            CopyResource("WindowsFormsApplication1.Resources.malware-tuneup.uvksr", path);
+                            CopyResource("WindowsFormsApplication1.Resources.key.uvkey", Path.GetTempPath() + @"key.uvkey");
+                            Process.Start(Path.GetTempPath() + programName + ".exe", "-ImportSr \"" + path + "\"");
+                            break;
 
-                    case "HitmanPro":
-                        Process.Start(Path.GetTempPath() + programName + ".exe", "/scan");
-                        break;
+                        case "HitmanPro":
+                            Process.Start(Path.GetTempPath() + programName + ".exe", "/scan");
+                            break;
 
-                    case "update":
-                        Process.Start(Path.GetTempPath() + programName + ".exe");
-                        Application.Exit();
-                        break;
+                        case "update":
+                            Process.Start(Path.GetTempPath() + programName + ".exe");
+                            Application.Exit();
+                            break;
 
-                    default:
-                        Process.Start(Path.GetTempPath() + programName + ".exe");
-                        break;
+                        default:
+                            Process.Start(Path.GetTempPath() + programName + ".exe");
+                            break;
+                    }
+                }
+                catch (Win32Exception ex) 
+                {
+                    DialogResult result = MessageBox.Show("Unable to download file, error: " + ex.Message, "Error", MessageBoxButtons.OK);
                 }
 
                 this.Dispose();

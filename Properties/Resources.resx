@@ -208,4 +208,7 @@
   <data name="malware_tuneup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\malware-tuneup.uvksr;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="key" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\key.uvkey;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
