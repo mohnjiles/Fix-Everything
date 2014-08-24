@@ -24,12 +24,24 @@ namespace WindowsFormsApplication1
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            Process.Start("systemreset");
+            DialogResult result = MessageBox.Show("Are you sure you want to Refresh this computer?" + 
+                " All programs will be removed!", "Are you sure?", MessageBoxButtons.YesNo);
+
+            if (result == DialogResult.Yes)
+            {
+                Process.Start("systemreset");
+            }
         }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            Process.Start("systemreset", "-factoryreset");
+            DialogResult result = MessageBox.Show("Are you sure you want to Reset this computer?" +
+                " EVERYTHING will be removed!", "Are you sure?", MessageBoxButtons.YesNo);
+
+            if (result == DialogResult.Yes)
+            {
+                Process.Start("systemreset", "-factoryreset");
+            }
         }
     }
 }
