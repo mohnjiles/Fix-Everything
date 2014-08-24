@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PasswordForm));
             this.label1 = new System.Windows.Forms.Label();
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.btnContinue = new System.Windows.Forms.Button();
@@ -80,6 +81,7 @@
             this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PasswordForm";
             this.Text = "Enter Password";
             this.ResumeLayout(false);

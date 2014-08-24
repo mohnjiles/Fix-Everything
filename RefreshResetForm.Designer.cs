@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RefreshResetForm));
             this.btnReset = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -72,6 +73,7 @@
             this.ClientSize = new System.Drawing.Size(457, 268);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnRefresh);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RefreshResetForm";
             this.Text = "Refresh or Reset?";
             this.ResumeLayout(false);
