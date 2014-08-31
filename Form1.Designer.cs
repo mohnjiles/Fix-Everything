@@ -79,6 +79,9 @@
             this.btnFirefox = new System.Windows.Forms.Button();
             this.btnChrome = new System.Windows.Forms.Button();
             this.btnAvast = new System.Windows.Forms.Button();
+            this.btnPcSettings = new System.Windows.Forms.Button();
+            this.btnHp = new System.Windows.Forms.Button();
+            this.btnKodak = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage5.SuspendLayout();
@@ -97,7 +100,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(45, 41);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(391, 103);
+            this.button1.Size = new System.Drawing.Size(391, 66);
             this.button1.TabIndex = 0;
             this.button1.Text = "Windows Update Fix";
             this.button1.UseVisualStyleBackColor = false;
@@ -111,9 +114,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(336, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(313, 45);
+            this.label1.Size = new System.Drawing.Size(294, 45);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Fix Everything v0.10";
+            this.label1.Text = "Fix Everything v1.0";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // button2
@@ -124,11 +127,11 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(515, 411);
+            this.button2.Location = new System.Drawing.Point(515, 340);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(391, 103);
+            this.button2.Size = new System.Drawing.Size(391, 66);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Remove Sentinel Runtime Drivers";
+            this.button2.Text = "Remove Sentinel Drivers";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -151,6 +154,7 @@
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(162)))), ((int)(((byte)(211)))));
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage1.Controls.Add(this.btnPcSettings);
             this.tabPage1.Controls.Add(this.btnScans);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.btnApps);
@@ -179,7 +183,7 @@
             this.btnScans.ForeColor = System.Drawing.Color.White;
             this.btnScans.Location = new System.Drawing.Point(515, 41);
             this.btnScans.Name = "btnScans";
-            this.btnScans.Size = new System.Drawing.Size(391, 103);
+            this.btnScans.Size = new System.Drawing.Size(391, 66);
             this.btnScans.TabIndex = 10;
             this.btnScans.Text = "Misc. Scans";
             this.btnScans.UseVisualStyleBackColor = false;
@@ -204,9 +208,9 @@
             this.btnApps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnApps.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApps.ForeColor = System.Drawing.Color.White;
-            this.btnApps.Location = new System.Drawing.Point(45, 411);
+            this.btnApps.Location = new System.Drawing.Point(45, 340);
             this.btnApps.Name = "btnApps";
-            this.btnApps.Size = new System.Drawing.Size(391, 103);
+            this.btnApps.Size = new System.Drawing.Size(391, 66);
             this.btnApps.TabIndex = 8;
             this.btnApps.Text = "Apps Troubleshooter";
             this.btnApps.UseVisualStyleBackColor = true;
@@ -220,11 +224,11 @@
             this.btnAdminUpdateFix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdminUpdateFix.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdminUpdateFix.ForeColor = System.Drawing.Color.White;
-            this.btnAdminUpdateFix.Location = new System.Drawing.Point(515, 286);
+            this.btnAdminUpdateFix.Location = new System.Drawing.Point(515, 240);
             this.btnAdminUpdateFix.Name = "btnAdminUpdateFix";
-            this.btnAdminUpdateFix.Size = new System.Drawing.Size(391, 103);
+            this.btnAdminUpdateFix.Size = new System.Drawing.Size(391, 66);
             this.btnAdminUpdateFix.TabIndex = 7;
-            this.btnAdminUpdateFix.Text = "Win 8.1 Update Admin Fix";
+            this.btnAdminUpdateFix.Text = "8.1 Admin Fix";
             this.btnAdminUpdateFix.UseVisualStyleBackColor = true;
             this.btnAdminUpdateFix.Click += new System.EventHandler(this.btnAdminUpdateFix_Click);
             // 
@@ -236,9 +240,9 @@
             this.btnSoundFix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSoundFix.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSoundFix.ForeColor = System.Drawing.Color.White;
-            this.btnSoundFix.Location = new System.Drawing.Point(45, 286);
+            this.btnSoundFix.Location = new System.Drawing.Point(45, 240);
             this.btnSoundFix.Name = "btnSoundFix";
-            this.btnSoundFix.Size = new System.Drawing.Size(391, 103);
+            this.btnSoundFix.Size = new System.Drawing.Size(391, 66);
             this.btnSoundFix.TabIndex = 6;
             this.btnSoundFix.Text = "Sound Fix for Win 8";
             this.btnSoundFix.UseVisualStyleBackColor = true;
@@ -263,9 +267,9 @@
             this.btnClearPrintQueue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClearPrintQueue.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClearPrintQueue.ForeColor = System.Drawing.Color.White;
-            this.btnClearPrintQueue.Location = new System.Drawing.Point(515, 163);
+            this.btnClearPrintQueue.Location = new System.Drawing.Point(515, 141);
             this.btnClearPrintQueue.Name = "btnClearPrintQueue";
-            this.btnClearPrintQueue.Size = new System.Drawing.Size(391, 103);
+            this.btnClearPrintQueue.Size = new System.Drawing.Size(391, 66);
             this.btnClearPrintQueue.TabIndex = 4;
             this.btnClearPrintQueue.Text = "Clear Print Queue";
             this.btnClearPrintQueue.UseVisualStyleBackColor = true;
@@ -279,9 +283,9 @@
             this.btnDvd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDvd.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDvd.ForeColor = System.Drawing.Color.White;
-            this.btnDvd.Location = new System.Drawing.Point(45, 163);
+            this.btnDvd.Location = new System.Drawing.Point(45, 141);
             this.btnDvd.Name = "btnDvd";
-            this.btnDvd.Size = new System.Drawing.Size(391, 103);
+            this.btnDvd.Size = new System.Drawing.Size(391, 66);
             this.btnDvd.TabIndex = 3;
             this.btnDvd.Text = "CD/DVD Fix";
             this.btnDvd.UseVisualStyleBackColor = true;
@@ -604,6 +608,8 @@
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(162)))), ((int)(((byte)(211)))));
+            this.tabPage4.Controls.Add(this.btnKodak);
+            this.tabPage4.Controls.Add(this.btnHp);
             this.tabPage4.Controls.Add(this.btnRefreshReset);
             this.tabPage4.Controls.Add(this.label7);
             this.tabPage4.Controls.Add(this.btnResetFirefox);
@@ -624,7 +630,7 @@
             this.btnRefreshReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefreshReset.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefreshReset.ForeColor = System.Drawing.Color.White;
-            this.btnRefreshReset.Location = new System.Drawing.Point(514, 244);
+            this.btnRefreshReset.Location = new System.Drawing.Point(514, 230);
             this.btnRefreshReset.Name = "btnRefreshReset";
             this.btnRefreshReset.Size = new System.Drawing.Size(391, 103);
             this.btnRefreshReset.TabIndex = 6;
@@ -650,7 +656,7 @@
             this.btnResetFirefox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResetFirefox.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResetFirefox.ForeColor = System.Drawing.Color.White;
-            this.btnResetFirefox.Location = new System.Drawing.Point(47, 244);
+            this.btnResetFirefox.Location = new System.Drawing.Point(47, 230);
             this.btnResetFirefox.Name = "btnResetFirefox";
             this.btnResetFirefox.Size = new System.Drawing.Size(391, 103);
             this.btnResetFirefox.TabIndex = 3;
@@ -666,7 +672,7 @@
             this.btnResetChrome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResetChrome.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResetChrome.ForeColor = System.Drawing.Color.White;
-            this.btnResetChrome.Location = new System.Drawing.Point(514, 67);
+            this.btnResetChrome.Location = new System.Drawing.Point(514, 53);
             this.btnResetChrome.Name = "btnResetChrome";
             this.btnResetChrome.Size = new System.Drawing.Size(391, 103);
             this.btnResetChrome.TabIndex = 2;
@@ -682,7 +688,7 @@
             this.btnResetIe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResetIe.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResetIe.ForeColor = System.Drawing.Color.White;
-            this.btnResetIe.Location = new System.Drawing.Point(47, 67);
+            this.btnResetIe.Location = new System.Drawing.Point(47, 53);
             this.btnResetIe.Name = "btnResetIe";
             this.btnResetIe.Size = new System.Drawing.Size(391, 103);
             this.btnResetIe.TabIndex = 1;
@@ -862,6 +868,54 @@
             this.btnAvast.UseVisualStyleBackColor = true;
             this.btnAvast.Click += new System.EventHandler(this.btnAvast_Click);
             // 
+            // btnPcSettings
+            // 
+            this.btnPcSettings.BackColor = System.Drawing.Color.Transparent;
+            this.btnPcSettings.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnPcSettings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnPcSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPcSettings.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPcSettings.ForeColor = System.Drawing.Color.White;
+            this.btnPcSettings.Location = new System.Drawing.Point(45, 439);
+            this.btnPcSettings.Name = "btnPcSettings";
+            this.btnPcSettings.Size = new System.Drawing.Size(391, 66);
+            this.btnPcSettings.TabIndex = 11;
+            this.btnPcSettings.Text = "Fix PC Settings";
+            this.btnPcSettings.UseVisualStyleBackColor = false;
+            this.btnPcSettings.Click += new System.EventHandler(this.btnPcSettings_Click_1);
+            // 
+            // btnHp
+            // 
+            this.btnHp.BackColor = System.Drawing.Color.Transparent;
+            this.btnHp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnHp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnHp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHp.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHp.ForeColor = System.Drawing.Color.White;
+            this.btnHp.Location = new System.Drawing.Point(47, 406);
+            this.btnHp.Name = "btnHp";
+            this.btnHp.Size = new System.Drawing.Size(391, 103);
+            this.btnHp.TabIndex = 7;
+            this.btnHp.Text = "HP Printer Install Wizard";
+            this.btnHp.UseVisualStyleBackColor = false;
+            this.btnHp.Click += new System.EventHandler(this.btnHp_Click);
+            // 
+            // btnKodak
+            // 
+            this.btnKodak.BackColor = System.Drawing.Color.Transparent;
+            this.btnKodak.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnKodak.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnKodak.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKodak.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKodak.ForeColor = System.Drawing.Color.White;
+            this.btnKodak.Location = new System.Drawing.Point(514, 406);
+            this.btnKodak.Name = "btnKodak";
+            this.btnKodak.Size = new System.Drawing.Size(391, 103);
+            this.btnKodak.TabIndex = 8;
+            this.btnKodak.Text = "Kodak Printer Install";
+            this.btnKodak.UseVisualStyleBackColor = false;
+            this.btnKodak.Click += new System.EventHandler(this.btnKodak_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -872,7 +926,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Fix Everything Program v0.10";
+            this.Text = "Fix Everything Program v1.0";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -942,6 +996,9 @@
         private System.Windows.Forms.Button btnUvk;
         private System.Windows.Forms.Button btnCcleaner;
         private System.Windows.Forms.Button btnRefreshReset;
+        private System.Windows.Forms.Button btnPcSettings;
+        private System.Windows.Forms.Button btnHp;
+        private System.Windows.Forms.Button btnKodak;
     }
 }
 

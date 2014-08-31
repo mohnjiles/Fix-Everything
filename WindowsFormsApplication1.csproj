@@ -141,9 +141,6 @@
     <Compile Include="ScansPopup.Designer.cs">
       <DependentUpon>ScansPopup.cs</DependentUpon>
     </Compile>
-    <Compile Include="SuperWebClient.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <EmbeddedResource Include="DownloadForm.resx">
       <DependentUpon>DownloadForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,6 +193,8 @@
     <EmbeddedResource Include="Resources\Reset-Ie-Default.ps1" />
     <EmbeddedResource Include="Resources\malware-tuneup.uvksr" />
     <EmbeddedResource Include="Resources\key.uvkey" />
+    <EmbeddedResource Include="Resources\fix_pcsettings.bat" />
+    <EmbeddedResource Include="Resources\UVKSettings.ini" />
     <None Include="WindowsFormsApplication1_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -264,6 +263,17 @@
     <None Include="Resources\stormbolt.ico" />
     <None Include="Resources\UVKPortable.exe" />
     <Content Include="stormbolt.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WUApiLib">
+      <Guid>{B596CC9F-56E5-419E-A622-E01BB457431E}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

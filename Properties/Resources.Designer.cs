@@ -145,6 +145,21 @@ namespace WindowsFormsApplication1.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to @ECHO OFF
+        ///ECHO This will fix PC Settings so that you can open it again!
+        ///ECHO.
+        ///powershell -ExecutionPolicy Unrestricted Add-AppxPackage -DisableDevelopmentMode -Register $Env:SystemRoot\ImmersiveControlPanel\AppxManifest.xml
+        ///ECHO.
+        ///ECHO All set! Try to open PC Settings now.
+        ///PAUSE.
+        /// </summary>
+        internal static string fix_pcsettings {
+            get {
+                return ResourceManager.GetString("fix_pcsettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] key {
@@ -352,6 +367,30 @@ namespace WindowsFormsApplication1.Properties {
             get {
                 object obj = ResourceManager.GetObject("stormbolt", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [Preferences]
+        ///PasswordEnabled=0
+        ///Password=
+        ///ContextMenu=1
+        ///AssociateUVKScripts=1
+        ///DesktopShortcut=0
+        ///AutoUpdate=0
+        ///ShowTooltips=0
+        ///AlwaysOnTop=0
+        ///GuiBkColor=0x00586068
+        ///GroupBorderColor=0xA0403020
+        ///GroupBkColor=0xB0C0D0DA
+        ///CurrentSkin=Cool waves
+        ///[HKLM\SOFTWARE\UVK - Ultra virus killer\ProcessExplorer]
+        ///KillAllIgnoreList=lmi_rescue.exe,LMI_RE~2.EXE
+        ///.
+        /// </summary>
+        internal static string UVKSettings {
+            get {
+                return ResourceManager.GetString("UVKSettings", resourceCulture);
             }
         }
         

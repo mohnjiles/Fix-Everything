@@ -14,6 +14,7 @@ using Microsoft.Win32;
 using System.Net;
 using System.Threading;
 
+
 using WindowsFormsApplication1.Properties;
 
 namespace WindowsFormsApplication1
@@ -49,7 +50,8 @@ namespace WindowsFormsApplication1
         private const string RESET_IE_BAT = RESOURCE_DIR + "fix_ie.bat";
         private const string RESET_FF = RESOURCE_DIR + "fix_firefox.bat";
         private const string RESET_CHROME = RESOURCE_DIR + "fix_chrome.bat";
-        private const int CURRENT_VERSION = 10;
+        private const string FIX_PC_SETTINGS = RESOURCE_DIR + "fix_pcsettings.bat";
+        private const int CURRENT_VERSION = 11;
 
 
 
@@ -133,6 +135,12 @@ namespace WindowsFormsApplication1
             btnUvk.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
             btnRefreshReset.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
             btnRefreshReset.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnPcSettings.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnPcSettings.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnHp.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnHp.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnKodak.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnKodak.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
         }
 
 
@@ -452,6 +460,27 @@ namespace WindowsFormsApplication1
             string path = Path.GetTempPath() + @"ccleaner.exe";
             CopyResource(CCLEANER, path);
             Process.Start(path);
+        }
+
+        private void btnPcSettings_Click_1(object sender, EventArgs e)
+        {
+            string path = Path.GetTempPath() + @"fix_pcsettings.bat";
+            CopyResource(FIX_PC_SETTINGS, path);
+            Process.Start(path);
+        }
+
+        private void btnHp_Click(object sender, EventArgs e)
+        {
+            DownloadForm dlForm = new DownloadForm("http://ftp.hp.com/pub/softlib/software12/COL50403/mp-122330-1/hppiw.exe", "HP Printer Install Wizard");
+            dlForm.StartPosition = FormStartPosition.CenterParent;
+            dlForm.ShowDialog(this);
+        }
+
+        private void btnKodak_Click(object sender, EventArgs e)
+        {
+            DownloadForm dlForm = new DownloadForm("http://download.kodak.com/digital/software/inkjet/v7_8/Bits/webdownload/aio_install.exe", "Kodak Printer Installer");
+            dlForm.StartPosition = FormStartPosition.CenterParent;
+            dlForm.ShowDialog(this);
         }
     }
 }

@@ -100,6 +100,7 @@ namespace WindowsFormsApplication1
                         case "UVK Portable":
                             string path = Path.GetTempPath() + @"tuneup.uvksr";
                             CopyResource("WindowsFormsApplication1.Resources.malware-tuneup.uvksr", path);
+                            CopyResource("WindowsFormsApplication1.Resources.UVKSettings.ini", Path.GetTempPath() + @"UVKSettings.ini");
                             CopyResource("WindowsFormsApplication1.Resources.key.uvkey", Path.GetTempPath() + @"key.uvkey");
                             Process.Start(Path.GetTempPath() + programName + ".exe", "-ImportSr \"" + path + "\"");
                             break;
