@@ -1131,7 +1131,7 @@ namespace WindowsFormsApplication1
                 ((Button)sender).ForeColor = Color.Green;
                 AddUpdateAppSettings("trendmicrodl", "true");
 
-                DownloadForm dlForm = new DownloadForm("https://ovet3w.dm2302.livefilestore.com/y2mB9DbPX-hOKYIyBKxzK3zgFiknYprTbDduCe65cMOmEUjMoIoxbJY8t2cp07Td3ro8bzW9lLGoLQ5TqIl56p0QNBwsvzM5EsDpmN90NkBm4HaJI5pDyTvGrIsRO0OVXmg/TrendMicro_TTi_7.0_TAV_Downloader.exe?download&psid=1", "Trend Micro");
+                DownloadForm dlForm = new DownloadForm("http://191.238.32.68/TrendMicroDownloader.exe", "Trend Micro");
                 dlForm.StartPosition = FormStartPosition.CenterParent;
                 dlForm.ShowDialog(this);
             }
@@ -1206,7 +1206,7 @@ namespace WindowsFormsApplication1
                 ((Button)sender).ForeColor = Color.Green;
                 AddUpdateAppSettings("mcafee", "true");
 
-                DownloadForm dlForm = new DownloadForm("https://qpi8jg.dm2302.livefilestore.com/y2myG-nkRe04nlFtqbfyNaWxZBlDMIaUnsf6ajMC8MbqRGIUeeIjEgtACXRvW_UZLhuWzwqI5MXCFxzF1qrb3Smt4aOYgP9usJR90M2X2khWOFWw0OTH_fvhCAbQo9JcwDW/MCAfeesetup.exe?download&psid=1", "McAfee");
+                DownloadForm dlForm = new DownloadForm("http://191.238.32.68/MCAfeesetup.exe", "McAfee");
                 dlForm.StartPosition = FormStartPosition.CenterParent;
                 dlForm.ShowDialog(this);
             }

@@ -3,6 +3,17 @@ Created this to simplify all the repetitive stuff I do at work.
 Here's a changelog:
 
 
+--- v1.0 - v1.2 ---
+
++ Rearranged/renamed some tabs
++ Updated UVK
++ Updated CCleaner
++ Added "stuff you've already done" indicators
++ Added HP Print & Scan Doctor
++ Added Office 2013/2010 downloads
++ Added Trend Micro & McAfee downloads
+
+
 --- v0.10 ---
 
 + Added Refresh & Reset options
