@@ -40,7 +40,19 @@ namespace WindowsFormsApplication1
             {
                 client.DownloadProgressChanged += new DownloadProgressChangedEventHandler(client_DownloadProgressChanged);
                 client.DownloadFileCompleted += new AsyncCompletedEventHandler(client_DownloadFileCompleted);
-                client.DownloadFileAsync(new Uri(url), Path.GetTempPath() + programName + ".exe");
+                switch (programName) {
+                    case "Office 2013 Removal Tool":
+                        client.DownloadFileAsync(new Uri(url), Path.GetTempPath() + programName + ".diagcab");
+                        break;
+
+                    case "Office 2010 Removal Tool":
+                        client.DownloadFileAsync(new Uri(url), Path.GetTempPath() + programName + ".msi");
+                        break;
+
+                    default:
+                        client.DownloadFileAsync(new Uri(url), Path.GetTempPath() + programName + ".exe");
+                        break;
+                }
             });
             thread.Start();
         }
@@ -112,6 +124,33 @@ namespace WindowsFormsApplication1
                         case "update":
                             Process.Start(Path.GetTempPath() + programName + ".exe");
                             Application.Exit();
+                            break;
+
+                        case "Office 2013 Removal Tool":
+                            Process.Start(Path.GetTempPath() + programName + ".diagcab");
+                            break;
+                            
+                        case "Office 2010 Removal Tool":
+                            Process.Start(Path.GetTempPath() + programName + ".msi");
+                            break;
+
+                        case "CCleaner":
+                            Process cCleaner = Process.Start(Path.GetTempPath() + programName + ".exe", "/S");
+
+                            while (!cCleaner.HasExited)
+                            {
+                                label1.Text = "Installing...";
+                            }
+
+                            string ccleaner64dir = @"C:\Program Files\CCleaner\CCleaner.exe";
+                            if (File.Exists(ccleaner64dir)) 
+                            {
+                                Process.Start(ccleaner64dir);
+                            }
+                            else
+                            {
+                                Process.Start(@"C:\Program Files (x86)\CCleaner\CCleaner.exe");
+                            }
                             break;
 
                         default:

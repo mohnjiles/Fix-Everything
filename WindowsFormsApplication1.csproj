@@ -183,8 +183,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\CDDVDWin8.meta.diagcab" />
-    <EmbeddedResource Include="Resources\Office 2013 Removal.diagcab" />
-    <EmbeddedResource Include="Resources\Office_2010_Remove.msi" />
     <EmbeddedResource Include="Resources\Printer fix.bat" />
     <EmbeddedResource Include="Resources\soundfix.bat" />
     <EmbeddedResource Include="Resources\win81adminfix.bat" />
@@ -257,11 +255,7 @@
     <EmbeddedResource Include="Resources\Ninite Malwarebytes Installer.exe" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\ccsetup416_slim.exe" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\stormbolt.ico" />
-    <None Include="Resources\UVKPortable.exe" />
     <Content Include="stormbolt.ico" />
   </ItemGroup>
   <ItemGroup>

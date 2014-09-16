@@ -151,14 +151,8 @@
   <data name="winupdatebat" xml:space="preserve">
     <value />
   </data>
-  <data name="Office_2010_Remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Office_2010_Remove.msi;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="Ninite_Java_Installer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ninite Java Installer.exe;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Office_2013_Removal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Office 2013 Removal.diagcab;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Printer_fix" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Printer fix.bat;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
@@ -183,9 +177,6 @@
   </data>
   <data name="Ninite_Malwarebytes_Installer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ninite Malwarebytes Installer.exe;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ccsetup416_slim" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ccsetup416_slim.exe;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="fix_chrome" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fix_chrome.bat;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
@@ -216,5 +207,8 @@
   </data>
   <data name="UVKSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UVKSettings.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="WinUpdate" xml:space="preserve">
+    <value>true</value>
   </data>
 </root>

@@ -92,16 +92,6 @@ namespace WindowsFormsApplication1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] ccsetup416_slim {
-            get {
-                object obj = ResourceManager.GetObject("ccsetup416_slim", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
         internal static byte[] CDDVDWin8_meta {
             get {
                 object obj = ResourceManager.GetObject("CDDVDWin8_meta", resourceCulture);
@@ -129,6 +119,7 @@ namespace WindowsFormsApplication1.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to @ECHO OFF
+        ///ECHO Loading...
         ///powershell Set-ExecutionPolicy RemoteSigned
         ///ECHO If no errors are displayed, please press enter to continue.
         ///PAUSE
@@ -300,26 +291,6 @@ namespace WindowsFormsApplication1.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] Office_2010_Remove {
-            get {
-                object obj = ResourceManager.GetObject("Office_2010_Remove", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] Office_2013_Removal {
-            get {
-                object obj = ResourceManager.GetObject("Office_2013_Removal", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to net stop spooler
         ///del C:\windows\system32\spool\printers\*.* /q
         ///net start spooler.
@@ -411,6 +382,15 @@ namespace WindowsFormsApplication1.Properties {
         internal static string win81adminfix {
             get {
                 return ResourceManager.GetString("win81adminfix", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to true.
+        /// </summary>
+        internal static string WinUpdate {
+            get {
+                return ResourceManager.GetString("WinUpdate", resourceCulture);
             }
         }
         
