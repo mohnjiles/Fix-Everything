@@ -51,7 +51,7 @@ namespace WindowsFormsApplication1
         private const string RESET_FF = RESOURCE_DIR + "fix_firefox.bat";
         private const string RESET_CHROME = RESOURCE_DIR + "fix_chrome.bat";
         private const string FIX_PC_SETTINGS = RESOURCE_DIR + "fix_pcsettings.bat";
-        private const int CURRENT_VERSION = 12;
+        private const int CURRENT_VERSION = 15;
 
 
 
@@ -63,101 +63,39 @@ namespace WindowsFormsApplication1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Set up button mouseover / mousedown colors
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnDvd.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnDvd.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnClearPrintQueue.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnClearPrintQueue.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnSoundFix.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnSoundFix.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnAdminUpdateFix.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnAdminUpdateFix.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnRemoveMcAfee.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnRemoveMcAfee.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnRemoveNorton.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnRemoveNorton.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnOffice2010.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnOffice2010.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnOffice2013.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnOffice2013.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnAutoruns.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnAutoruns.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnAvast.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnAvast.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnChrome.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnChrome.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnFirefox.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnFirefox.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnITunes.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnITunes.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnJava.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnJava.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnLibre.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnLibre.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnOpenOffice.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnOpenOffice.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnSuper.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnSuper.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnThunderbird.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnThunderbird.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnVlc.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnVlc.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnMalwarebytes.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnMalwarebytes.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnApps.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnApps.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnCcleaner.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnCcleaner.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnResetIe.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnResetIe.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnResetFirefox.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnResetFirefox.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnResetChrome.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnResetChrome.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnScans.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnScans.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnHitman32.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnHitman32.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnHitman64.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnHitman64.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnAdwcleaner.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnAdwcleaner.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnMalwarebytesOld.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnMalwarebytesOld.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnIobit.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnIobit.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnRevo.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnRevo.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnRemoveTrend.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnRemoveTrend.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnUvk.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnUvk.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnRefreshReset.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnRefreshReset.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnPcSettings.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnPcSettings.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnHp.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnHp.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnKodak.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnKodak.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnOffice2010Dl.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnOffice2010Dl.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnOffice2013Dl.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnOffice2013Dl.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnPrntScanDoc.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnPrntScanDoc.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnTrendMicro.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnTrendMicro.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
-            btnMcAfee.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
-            btnMcAfee.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            setupButtonAppearance();
 
             if (!File.Exists("FixEverything.exe.config"))
             {
                 createConfig();
+            }
+            else
+            {
+                checkSettings();
+            }
+
+            // Check for proxy server
+            if (isProxyEnabled())
+            {
+                DialogResult result = MessageBox.Show("Proxy server is enabled on this computer. Would you like to turn it off?",
+                    "Proxy Server Enabled", MessageBoxButtons.YesNo);
+
+                if (result == DialogResult.Yes)
+                {
+                    Process p = new Process();
+                    p.StartInfo.FileName = @"C:\Windows\system32\RunDll32.exe";
+                    p.StartInfo.Arguments = @"shell32.dll,Control_RunDLL inetcpl.cpl,Internet,4";
+                    p.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                    p.Start();
+                    Thread.Sleep(500);
+                    SendKeys.SendWait("%L");
+                    Thread.Sleep(100);
+                    SendKeys.SendWait("%X");
+                    Thread.Sleep(100);
+                    SendKeys.SendWait("~");
+                    Thread.Sleep(100);
+                    SendKeys.SendWait("{ESC}");
+                }
             }
 
             // Check for updated version
@@ -181,237 +119,6 @@ namespace WindowsFormsApplication1
                 catch (Win32Exception ex)
                 {
                     MessageBox.Show("Error!", "Error checking for updates, check your internet connection", MessageBoxButtons.OK);
-                }
-            }
-
-            // Check settings for what's already been done
-            var appSettings = ConfigurationManager.AppSettings;
-
-            if (appSettings.Count != 0)
-            {
-                foreach (var key in appSettings.AllKeys)
-                {
-                    switch (key)
-                    {
-                        case "WinUpdate":
-                            if (appSettings[key] == "true")
-                            {
-                                button1.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "haspdinst":
-                            if (appSettings[key] == "true")
-                            {
-                                button2.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "dvd":
-                            if (appSettings[key] == "true")
-                            {
-                                btnDvd.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "printqueue":
-                            if (appSettings[key] == "true")
-                            {
-                                btnClearPrintQueue.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "soundfix":
-                            if (appSettings[key] == "true")
-                            {
-                                btnSoundFix.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "adminfix":
-                            if (appSettings[key] == "true")
-                            {
-                                btnAdminUpdateFix.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "appsfix":
-                            if (appSettings[key] == "true")
-                            {
-                                btnApps.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "fixpcsettings":
-                            if (appSettings[key] == "true")
-                            {
-                                btnPcSettings.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "hitmanpro64":
-                            if (appSettings[key] == "true")
-                            {
-                                btnHitman64.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "hitmanpro32":
-                            if (appSettings[key] == "true")
-                            {
-                                btnHitman32.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "malwarebytes20":
-                            if (appSettings[key] == "true")
-                            {
-                                btnMalwarebytes.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "malwarebytes175":
-                            if (appSettings[key] == "true")
-                            {
-                                btnMalwarebytesOld.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "super":
-                            if (appSettings[key] == "true")
-                            {
-                                btnSuper.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "adwcleaner":
-                            if (appSettings[key] == "true")
-                            {
-                                btnAdwcleaner.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "iobit":
-                            if (appSettings[key] == "true")
-                            {
-                                btnIobit.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "revo":
-                            if (appSettings[key] == "true")
-                            {
-                                btnRevo.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "uvk":
-                            if (appSettings[key] == "true")
-                            {
-                                btnUvk.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "ccleaner":
-                            if (appSettings[key] == "true")
-                            {
-                                btnCcleaner.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "office2013dl":
-                            if (appSettings[key] == "true")
-                            {
-                                btnOffice2013Dl.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "office2013":
-                            if (appSettings[key] == "true")
-                            {
-                                btnOffice2013.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "office2010dl":
-                            if (appSettings[key] == "true")
-                            {
-                                btnOffice2010Dl.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "office2010":
-                            if (appSettings[key] == "true")
-                            {
-                                btnOffice2010.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "hppiw":
-                            if (appSettings[key] == "true")
-                            {
-                                btnHp.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "kodak":
-                            if (appSettings[key] == "true")
-                            {
-                                btnKodak.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "printscandoc":
-                            if (appSettings[key] == "true")
-                            {
-                                btnPrntScanDoc.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "trendmicrodl":
-                            if (appSettings[key] == "true")
-                            {
-                                btnTrendMicro.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "removetrend":
-                            if (appSettings[key] == "true")
-                            {
-                                btnRemoveTrend.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "mcafee":
-                            if (appSettings[key] == "true")
-                            {
-                                btnMcAfee.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "removemcafee":
-                            if (appSettings[key] == "true")
-                            {
-                                btnRemoveMcAfee.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "removenorton":
-                            if (appSettings[key] == "true")
-                            {
-                                btnRemoveNorton.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "resetie":
-                            if (appSettings[key] == "true")
-                            {
-                                btnResetIe.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "resetchrome":
-                            if (appSettings[key] == "true")
-                            {
-                                btnResetChrome.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "resetfirefox":
-                            if (appSettings[key] == "true")
-                            {
-                                btnResetFirefox.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "refreshreset":
-                            if (appSettings[key] == "true")
-                            {
-                                btnRefreshReset.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "autoruns":
-                            if (appSettings[key] == "true")
-                            {
-                                btnAutoruns.ForeColor = Color.Green;
-                            }
-                            break;
-                        case "scans":
-                            if (appSettings[key] == "true")
-                            {
-                                btnScans.ForeColor = Color.Green;
-                            }
-                            break;
-                        default:
-                            break;
-                    }
                 }
             }
         }
@@ -477,9 +184,9 @@ namespace WindowsFormsApplication1
                 ((Button)sender).ForeColor = Color.Green;
                 AddUpdateAppSettings("dvd", "true");
 
-                string path = Path.GetTempPath() + @"cddvdfix.diagcab";
-                CopyResource(CD_DVD_FIX, path);
-                Process.Start(path);
+                DownloadForm dlForm = new DownloadForm("http://callme.cloudapp.net/CDDVDWin8.meta.diagcab", "DVD Drive Fix");
+                dlForm.StartPosition = FormStartPosition.CenterParent;
+                dlForm.ShowDialog(this);
             }
         }
 
@@ -1170,9 +877,9 @@ namespace WindowsFormsApplication1
                 ((Button)sender).ForeColor = Color.Green;
                 AddUpdateAppSettings("removenorton", "true");
 
-                string path = Path.GetTempPath() + @"removenorton.exe";
-                CopyResource(REMOVE_NORTON, path);
-                Process.Start(path);
+                DownloadForm dlForm = new DownloadForm("ftp://ftp.symantec.com/public/english_us_canada/removal_tools/Norton_Removal_Tool.exe", "Norton Removal Tool");
+                dlForm.StartPosition = FormStartPosition.CenterParent;
+                dlForm.ShowDialog(this);
             }
         }
 
@@ -1263,6 +970,24 @@ namespace WindowsFormsApplication1
             }
         }
 
+        private void btnAmd_Click(object sender, EventArgs e)
+        {
+            if (Form.ModifierKeys == Keys.Control)
+            {
+                ((Button)sender).ForeColor = Color.White;
+                AddUpdateAppSettings("amd", "false");
+            }
+            else
+            {
+                ((Button)sender).ForeColor = Color.Green;
+                AddUpdateAppSettings("amd", "true");
+
+                DownloadForm dlForm = new DownloadForm("http://www2.ati.com/drivers/auto/amddriverdownloader.exe", "AMD Compatibility Checker");
+                dlForm.StartPosition = FormStartPosition.CenterParent;
+                dlForm.ShowDialog(this);
+            }
+        }
+
         private void createConfig()
         {
             StringBuilder sb = new StringBuilder();
@@ -1295,6 +1020,350 @@ namespace WindowsFormsApplication1
             {
                 Console.WriteLine("Error writing app settings");
             }
+        }
+
+        private bool isProxyEnabled()
+        {
+            RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Internet Settings");
+            int proxyStatus = (int)key.GetValue("ProxyEnable");
+
+            return proxyStatus == 1 ? true : false;
+        }
+
+        private void checkSettings()
+        {
+            var appSettings = ConfigurationManager.AppSettings;
+
+            if (appSettings.Count != 0)
+            {
+                foreach (var key in appSettings.AllKeys)
+                {
+                    switch (key)
+                    {
+                        case "WinUpdate":
+                            if (appSettings[key] == "true")
+                            {
+                                button1.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "haspdinst":
+                            if (appSettings[key] == "true")
+                            {
+                                button2.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "dvd":
+                            if (appSettings[key] == "true")
+                            {
+                                btnDvd.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "printqueue":
+                            if (appSettings[key] == "true")
+                            {
+                                btnClearPrintQueue.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "soundfix":
+                            if (appSettings[key] == "true")
+                            {
+                                btnSoundFix.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "adminfix":
+                            if (appSettings[key] == "true")
+                            {
+                                btnAdminUpdateFix.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "appsfix":
+                            if (appSettings[key] == "true")
+                            {
+                                btnApps.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "fixpcsettings":
+                            if (appSettings[key] == "true")
+                            {
+                                btnPcSettings.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "hitmanpro64":
+                            if (appSettings[key] == "true")
+                            {
+                                btnHitman64.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "hitmanpro32":
+                            if (appSettings[key] == "true")
+                            {
+                                btnHitman32.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "malwarebytes20":
+                            if (appSettings[key] == "true")
+                            {
+                                btnMalwarebytes.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "malwarebytes175":
+                            if (appSettings[key] == "true")
+                            {
+                                btnMalwarebytesOld.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "super":
+                            if (appSettings[key] == "true")
+                            {
+                                btnSuper.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "adwcleaner":
+                            if (appSettings[key] == "true")
+                            {
+                                btnAdwcleaner.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "iobit":
+                            if (appSettings[key] == "true")
+                            {
+                                btnIobit.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "revo":
+                            if (appSettings[key] == "true")
+                            {
+                                btnRevo.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "uvk":
+                            if (appSettings[key] == "true")
+                            {
+                                btnUvk.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "ccleaner":
+                            if (appSettings[key] == "true")
+                            {
+                                btnCcleaner.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "office2013dl":
+                            if (appSettings[key] == "true")
+                            {
+                                btnOffice2013Dl.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "office2013":
+                            if (appSettings[key] == "true")
+                            {
+                                btnOffice2013.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "office2010dl":
+                            if (appSettings[key] == "true")
+                            {
+                                btnOffice2010Dl.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "office2010":
+                            if (appSettings[key] == "true")
+                            {
+                                btnOffice2010.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "hppiw":
+                            if (appSettings[key] == "true")
+                            {
+                                btnHp.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "kodak":
+                            if (appSettings[key] == "true")
+                            {
+                                btnKodak.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "printscandoc":
+                            if (appSettings[key] == "true")
+                            {
+                                btnPrntScanDoc.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "trendmicrodl":
+                            if (appSettings[key] == "true")
+                            {
+                                btnTrendMicro.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "removetrend":
+                            if (appSettings[key] == "true")
+                            {
+                                btnRemoveTrend.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "mcafee":
+                            if (appSettings[key] == "true")
+                            {
+                                btnMcAfee.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "removemcafee":
+                            if (appSettings[key] == "true")
+                            {
+                                btnRemoveMcAfee.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "removenorton":
+                            if (appSettings[key] == "true")
+                            {
+                                btnRemoveNorton.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "resetie":
+                            if (appSettings[key] == "true")
+                            {
+                                btnResetIe.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "resetchrome":
+                            if (appSettings[key] == "true")
+                            {
+                                btnResetChrome.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "resetfirefox":
+                            if (appSettings[key] == "true")
+                            {
+                                btnResetFirefox.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "refreshreset":
+                            if (appSettings[key] == "true")
+                            {
+                                btnRefreshReset.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "autoruns":
+                            if (appSettings[key] == "true")
+                            {
+                                btnAutoruns.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "scans":
+                            if (appSettings[key] == "true")
+                            {
+                                btnScans.ForeColor = Color.Green;
+                            }
+                            break;
+                        case "amd":
+                            if (appSettings[key] == "true")
+                            {
+                                btnAmd.ForeColor = Color.Green;
+                            }
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+        }
+
+        private void setupButtonAppearance()
+        {
+            // Set up button mouseover / mousedown colors
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnDvd.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnDvd.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnClearPrintQueue.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnClearPrintQueue.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnSoundFix.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnSoundFix.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnAdminUpdateFix.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnAdminUpdateFix.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnRemoveMcAfee.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnRemoveMcAfee.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnRemoveNorton.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnRemoveNorton.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnOffice2010.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnOffice2010.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnOffice2013.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnOffice2013.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnAutoruns.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnAutoruns.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnAvast.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnAvast.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnChrome.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnChrome.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnFirefox.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnFirefox.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnITunes.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnITunes.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnJava.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnJava.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnLibre.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnLibre.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnOpenOffice.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnOpenOffice.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnSuper.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnSuper.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnThunderbird.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnThunderbird.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnVlc.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnVlc.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnMalwarebytes.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnMalwarebytes.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnApps.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnApps.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnCcleaner.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnCcleaner.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnResetIe.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnResetIe.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnResetFirefox.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnResetFirefox.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnResetChrome.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnResetChrome.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnScans.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnScans.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnHitman32.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnHitman32.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnHitman64.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnHitman64.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnAdwcleaner.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnAdwcleaner.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnMalwarebytesOld.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnMalwarebytesOld.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnIobit.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnIobit.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnRevo.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnRevo.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnRemoveTrend.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnRemoveTrend.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnUvk.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnUvk.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnRefreshReset.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnRefreshReset.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnPcSettings.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnPcSettings.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnHp.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnHp.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnKodak.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnKodak.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnOffice2010Dl.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnOffice2010Dl.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnOffice2013Dl.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnOffice2013Dl.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnPrntScanDoc.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnPrntScanDoc.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnTrendMicro.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnTrendMicro.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnMcAfee.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnMcAfee.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
+            btnAmd.FlatAppearance.MouseOverBackColor = Color.FromArgb(70, 0, 0, 0);
+            btnAmd.FlatAppearance.MouseDownBackColor = Color.FromArgb(150, 0, 0, 0);
         }
     }
 }

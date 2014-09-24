@@ -196,7 +196,9 @@
     <None Include="WindowsFormsApplication1_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
@@ -217,9 +219,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\autoruns.exe" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\Norton_Removal_Tool.exe" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Ninite Avast Installer.exe" />

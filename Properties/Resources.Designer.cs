@@ -281,16 +281,6 @@ namespace WindowsFormsApplication1.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] Norton_Removal_Tool {
-            get {
-                object obj = ResourceManager.GetObject("Norton_Removal_Tool", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to net stop spooler
         ///del C:\windows\system32\spool\printers\*.* /q
         ///net start spooler.

@@ -56,6 +56,8 @@
             this.btnHitman64 = new System.Windows.Forms.Button();
             this.btnSuper = new System.Windows.Forms.Button();
             this.tabOffice = new System.Windows.Forms.TabPage();
+            this.btnOffice2010Dl = new System.Windows.Forms.Button();
+            this.btnOffice2013Dl = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnOffice2013 = new System.Windows.Forms.Button();
             this.btnOffice2010 = new System.Windows.Forms.Button();
@@ -83,14 +85,13 @@
             this.btnChrome = new System.Windows.Forms.Button();
             this.btnAvast = new System.Windows.Forms.Button();
             this.tabOther = new System.Windows.Forms.TabPage();
+            this.btnAmd = new System.Windows.Forms.Button();
+            this.btnAutoruns = new System.Windows.Forms.Button();
             this.btnRefreshReset = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.btnResetFirefox = new System.Windows.Forms.Button();
             this.btnResetChrome = new System.Windows.Forms.Button();
             this.btnResetIe = new System.Windows.Forms.Button();
-            this.btnAutoruns = new System.Windows.Forms.Button();
-            this.btnOffice2013Dl = new System.Windows.Forms.Button();
-            this.btnOffice2010Dl = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabFixits.SuspendLayout();
             this.tabMalware.SuspendLayout();
@@ -125,9 +126,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(336, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(294, 45);
+            this.label1.Size = new System.Drawing.Size(278, 45);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Fix Everything v1.2";
+            this.label1.Text = "Fix Everything 1.4";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // button2
@@ -526,6 +527,38 @@
             this.tabOffice.TabIndex = 1;
             this.tabOffice.Text = "Office";
             // 
+            // btnOffice2010Dl
+            // 
+            this.btnOffice2010Dl.BackColor = System.Drawing.Color.Transparent;
+            this.btnOffice2010Dl.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnOffice2010Dl.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnOffice2010Dl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOffice2010Dl.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOffice2010Dl.ForeColor = System.Drawing.Color.White;
+            this.btnOffice2010Dl.Location = new System.Drawing.Point(48, 250);
+            this.btnOffice2010Dl.Name = "btnOffice2010Dl";
+            this.btnOffice2010Dl.Size = new System.Drawing.Size(391, 93);
+            this.btnOffice2010Dl.TabIndex = 6;
+            this.btnOffice2010Dl.Text = "Office 2010 Download";
+            this.btnOffice2010Dl.UseVisualStyleBackColor = true;
+            this.btnOffice2010Dl.Click += new System.EventHandler(this.btnOffice2010Dl_Click);
+            // 
+            // btnOffice2013Dl
+            // 
+            this.btnOffice2013Dl.BackColor = System.Drawing.Color.Transparent;
+            this.btnOffice2013Dl.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnOffice2013Dl.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnOffice2013Dl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOffice2013Dl.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOffice2013Dl.ForeColor = System.Drawing.Color.White;
+            this.btnOffice2013Dl.Location = new System.Drawing.Point(48, 57);
+            this.btnOffice2013Dl.Name = "btnOffice2013Dl";
+            this.btnOffice2013Dl.Size = new System.Drawing.Size(391, 93);
+            this.btnOffice2013Dl.TabIndex = 5;
+            this.btnOffice2013Dl.Text = "Office 2013 Download";
+            this.btnOffice2013Dl.UseVisualStyleBackColor = true;
+            this.btnOffice2013Dl.Click += new System.EventHandler(this.btnOffice2013Dl_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -921,6 +954,7 @@
             // tabOther
             // 
             this.tabOther.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(162)))), ((int)(((byte)(211)))));
+            this.tabOther.Controls.Add(this.btnAmd);
             this.tabOther.Controls.Add(this.btnAutoruns);
             this.tabOther.Controls.Add(this.btnRefreshReset);
             this.tabOther.Controls.Add(this.label7);
@@ -933,6 +967,38 @@
             this.tabOther.Size = new System.Drawing.Size(958, 557);
             this.tabOther.TabIndex = 3;
             this.tabOther.Text = "Other";
+            // 
+            // btnAmd
+            // 
+            this.btnAmd.BackColor = System.Drawing.Color.Transparent;
+            this.btnAmd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnAmd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnAmd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAmd.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAmd.ForeColor = System.Drawing.Color.White;
+            this.btnAmd.Location = new System.Drawing.Point(514, 404);
+            this.btnAmd.Name = "btnAmd";
+            this.btnAmd.Size = new System.Drawing.Size(391, 98);
+            this.btnAmd.TabIndex = 8;
+            this.btnAmd.Text = "AMD Compatibility Checker";
+            this.btnAmd.UseVisualStyleBackColor = true;
+            this.btnAmd.Click += new System.EventHandler(this.btnAmd_Click);
+            // 
+            // btnAutoruns
+            // 
+            this.btnAutoruns.BackColor = System.Drawing.Color.Transparent;
+            this.btnAutoruns.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnAutoruns.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnAutoruns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAutoruns.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAutoruns.ForeColor = System.Drawing.Color.White;
+            this.btnAutoruns.Location = new System.Drawing.Point(47, 404);
+            this.btnAutoruns.Name = "btnAutoruns";
+            this.btnAutoruns.Size = new System.Drawing.Size(391, 98);
+            this.btnAutoruns.TabIndex = 7;
+            this.btnAutoruns.Text = "Autoruns";
+            this.btnAutoruns.UseVisualStyleBackColor = true;
+            this.btnAutoruns.Click += new System.EventHandler(this.btnAutoruns_Click);
             // 
             // btnRefreshReset
             // 
@@ -1008,54 +1074,6 @@
             this.btnResetIe.UseVisualStyleBackColor = false;
             this.btnResetIe.Click += new System.EventHandler(this.button3_Click);
             // 
-            // btnAutoruns
-            // 
-            this.btnAutoruns.BackColor = System.Drawing.Color.Transparent;
-            this.btnAutoruns.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnAutoruns.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnAutoruns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAutoruns.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAutoruns.ForeColor = System.Drawing.Color.White;
-            this.btnAutoruns.Location = new System.Drawing.Point(47, 409);
-            this.btnAutoruns.Name = "btnAutoruns";
-            this.btnAutoruns.Size = new System.Drawing.Size(391, 93);
-            this.btnAutoruns.TabIndex = 7;
-            this.btnAutoruns.Text = "Autoruns";
-            this.btnAutoruns.UseVisualStyleBackColor = true;
-            this.btnAutoruns.Click += new System.EventHandler(this.btnAutoruns_Click);
-            // 
-            // btnOffice2013Dl
-            // 
-            this.btnOffice2013Dl.BackColor = System.Drawing.Color.Transparent;
-            this.btnOffice2013Dl.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnOffice2013Dl.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnOffice2013Dl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOffice2013Dl.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOffice2013Dl.ForeColor = System.Drawing.Color.White;
-            this.btnOffice2013Dl.Location = new System.Drawing.Point(48, 57);
-            this.btnOffice2013Dl.Name = "btnOffice2013Dl";
-            this.btnOffice2013Dl.Size = new System.Drawing.Size(391, 93);
-            this.btnOffice2013Dl.TabIndex = 5;
-            this.btnOffice2013Dl.Text = "Office 2013 Download";
-            this.btnOffice2013Dl.UseVisualStyleBackColor = true;
-            this.btnOffice2013Dl.Click += new System.EventHandler(this.btnOffice2013Dl_Click);
-            // 
-            // btnOffice2010Dl
-            // 
-            this.btnOffice2010Dl.BackColor = System.Drawing.Color.Transparent;
-            this.btnOffice2010Dl.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btnOffice2010Dl.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnOffice2010Dl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOffice2010Dl.Font = new System.Drawing.Font("Calibri Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOffice2010Dl.ForeColor = System.Drawing.Color.White;
-            this.btnOffice2010Dl.Location = new System.Drawing.Point(48, 250);
-            this.btnOffice2010Dl.Name = "btnOffice2010Dl";
-            this.btnOffice2010Dl.Size = new System.Drawing.Size(391, 93);
-            this.btnOffice2010Dl.TabIndex = 6;
-            this.btnOffice2010Dl.Text = "Office 2010 Download";
-            this.btnOffice2010Dl.UseVisualStyleBackColor = true;
-            this.btnOffice2010Dl.Click += new System.EventHandler(this.btnOffice2010Dl_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1066,7 +1084,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Fix Everything v1.2";
+            this.Text = "Fix Everything 1.4";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabFixits.ResumeLayout(false);
@@ -1152,6 +1170,7 @@
         private System.Windows.Forms.Button btnAutoruns;
         private System.Windows.Forms.Button btnOffice2013Dl;
         private System.Windows.Forms.Button btnOffice2010Dl;
+        private System.Windows.Forms.Button btnAmd;
     }
 }
 

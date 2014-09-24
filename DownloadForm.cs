@@ -49,6 +49,10 @@ namespace WindowsFormsApplication1
                         client.DownloadFileAsync(new Uri(url), Path.GetTempPath() + programName + ".msi");
                         break;
 
+                    case "DVD Drive Fix":
+                        client.DownloadFileAsync(new Uri(url), Path.GetTempPath() + programName + ".diagcab");
+                        break;
+
                     default:
                         client.DownloadFileAsync(new Uri(url), Path.GetTempPath() + programName + ".exe");
                         break;
@@ -133,6 +137,9 @@ namespace WindowsFormsApplication1
                         case "Office 2010 Removal Tool":
                             Process.Start(Path.GetTempPath() + programName + ".msi");
                             break;
+                        case "DVD Drive Fix":
+                            Process.Start(Path.GetTempPath() + programName + ".diagcab");
+                            break;
 
                         case "CCleaner":
                             Process cCleaner = Process.Start(Path.GetTempPath() + programName + ".exe", "/S");
@@ -160,7 +167,7 @@ namespace WindowsFormsApplication1
                 }
                 catch (Win32Exception ex) 
                 {
-                    DialogResult result = MessageBox.Show("Unable to download file, error: " + ex.Message, "Error", MessageBoxButtons.OK);
+                    DialogResult result = MessageBox.Show("Unable to download file, check internet connection and/or proxy server", "Error", MessageBoxButtons.OK);
                 }
 
                 this.Dispose();
